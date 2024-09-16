@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ian O'Connell Portfolio</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- normalize for different browsers --> 
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  <!-- font awesome for brands -->
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/ian-oconnell-logo.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list"> <!-- BEM system __ means subcomponent -->
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#experiences" class="nav__link">My Experiences</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Ian O'Connell</strong>
+            </h1> <!-- BEM system -- meants modifier class -->
+            <p class="section__subtitle section__subtitle--intro">CSE student</p>
+            <img src="img/ian-oconnell-01.jpg" alt="a picture of Ian O'Connell smiling" class="intro__img">
+        </section>
+
+        <!-- My Experiences -->
+        <section class="my-experiences" id="experiences">
+            <h2 class="section__title section__title--experiences">What I've Done</h2>
+            <div class="experiences">
+                <div class="experience">
+                    <h3>Student</h3>
+                    <p>As a computer science and engineering student at the University of California Davis, 
+                    I have been exposed to a wide variety of fundamental computer science concepts as well 
+                    as learned time management and organizational skills in addition to these.
+                    </p>
+                </div> <!-- / experience -->
+
+                <div class="experience">
+                    <h3>Programmer</h3>
+                    <p>I have taken many applicable courses including OOP, data structures, algorithms, computer networks, computer architecture, 
+                    software engineering, operating systems, machine dependent programming, programimng languages and programming tools. I 
+                    pursued programming skills through certificates in web development and design as well as Python. 
+                    </p>
+                </div> <!-- / experience -->
+
+                <div class="experience">
+                    <h3>Manager</h3>
+                    <p>As manager of the an Esports Program at UCD I oversaw the operation of twenty five people. 
+                    Here I refined my communication and leadership skills through the process of 
+                    transforming the program into a successful competitive entity while identifying and resolving problems.
+                    </p>
+                </div> <!-- / experience -->
+            </div> <!-- / experiences -->
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title-about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Computer Science and Engineering student at UC Davis</p>
+
+            <div class="about-me__body">
+                <p>I am an enthusiastic computer science and engineering student with fundamental programming
+                knowledge in C++, Python, HTML, CSS, and JavaScript, an effective skill set for team environments, and a strong
+                commitment to learning what is necessary to have a greater influence within my career.
+                </p>
+                <p>I have experience organizing schedules and overcoming demanding challenges
+                through my education and time as manager of the League of Legends program at UCD. 
+                I am passionate about working in team environments, and interacting with other ambitious people.</p>
+            </div>
+
+            <img src="img/ian-oconnell-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <!-- portfolio item 01 -->
+                <div class="portfolio-item">
+                    <h3>My Resume</h3>
+                    <div class="image-container">
+                        <a href="resources/Ian O'Connell Resume.pdf" class="portfolio__item" target="_blank">
+                            <img src="img/resume-icon.jpg" alt="" class="portfolio__img">
+                        </a>
+                    </div>
+                </div>
+                
+
+                <!-- portfolio item 02 -->
+                <div class="portfolio-item">
+                    <h3>Manager</h3>
+                    <div class="image-container">
+                        <a href="league-management.html" class="portfolio__item">
+                            <img src="img/ucd-esports-logo.jpg" alt="" class="portfolio__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:ianoconnell15@gmail.com" class="footer__link">ianoconnell15@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Braxai">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/iroconnell/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
