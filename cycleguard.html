@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>League of Legends Program Management</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- normalize for different browsers --> 
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  <!-- font awesome for brands -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/ian-oconnell-logo.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list"> <!-- BEM system __ means subcomponent -->
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Experiences</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                UCD Senior Project <strong>CycleGuard</strong>
+            </h1> <!-- BEM system -- means modifier class -->
+            <p class="section__subtitle section__subtitle--intro">biking mobile application</p>
+            <img src="img/cycleguard-logo.jpg" alt="CycleGuard Logo" class="portfolio-item-page__img">
+        </section>
+
+        <div class="portfolio-item-page">
+            <h3>CycleGuard</h3>
+            <p>CycleGuard is a mobile application and accompnaying helmet that aims to innovate the bike riding experience. The 
+            helmet offers various safety features including automatic headlights and brakelights as well as toggleable turn signals. CycleGuard 
+            connects to a mobile app to track the user’s history of bike rides, as a gamified fitness tracker system for encouraging users to 
+            exercise more. It saves history of bike rides and uses user-input metrics to determine an estimated calories burned over time, and 
+            displays this information as easy-to-understand visual graphs. Users are encouraged to bike more through earnable achievements and 
+            an in-game currency system, with currency earned based on distance traveled. Currency can then be spent on in-game cosmetics such 
+            as background colors. In addition to this the app includes social platforms for users to create accounts and interact with their friends. 
+            </p>
+            
+            <h3>My Experience as a Front End Developer</h3>
+            <p>My primary responsibilities on this project took place on the front end. I was responsible for many aesthetic design decisions that 
+            aimed to make the app an appealing and intuitive experience for users. This included working directly on the home page where weekly statistics, 
+            welcome messages, and achievment progress can be viewed in an engaging and visual manner. I developed the trip history page where users 
+            can see their all time statistics and view their entire ride history with a number of filters such as distance rode and the dates rides were completed.
+            Again this aimed to have a visually appealing layout that makes users excited to look at their progress. The achievements page where various badges
+            and the current progress can be seen, the store where items can be purchased and interacted with in other parts of the app, and the settings where users
+            can select themes, darkmode, privacy settings, and icons were all designed by me with the same goals as the major app features. 
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:ianoconnell15@gmail.com" class="footer__link">ianoconnell15@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Braxai">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/iroconnell/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
