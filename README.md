@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-Welcome to my personal portfolio website! This is a simple site built using **HTML**, **CSS**, and **JavaScript** to showcase my biography, experiences, and selected work. I studied web development through two freeCodeCamp certification courses, as well as school and personal projects.
+Welcome to my personal portfolio website! This is a website built using **HTML**, **CSS**, and **JavaScript** to showcase my biography, experiences, and selected work. I studied web development through two freeCodeCamp certification courses, as well as school and personal projects.
 
 ## 🌐 Live Demo
 
