@@ -10,7 +10,7 @@ You can view the live website here: [Portfolio Website](https://braxai.github.io
 
 - Brief biography and introduction
 - Selected personal projects
-- Summary of Management Experience
+- Summary of management experience
 - Clean, responsive design
 - Resume
 
