@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This is a website built using **HTML**
 
 ## 🌐 Live Demo
 
-You can view the live website here: [Portfolio Website]((https://braxai.github.io/))
+You can view the live website here: [Portfolio Website](https://braxai.github.io/)
 
 ## 🚀 Features
 
