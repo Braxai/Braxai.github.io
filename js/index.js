@@ -45,3 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
     //typeNextChar();
     setTimeout(typeNextChar, 250);
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('visible', entry.isIntersecting);
+    });
+  }, { threshold: 0.1 });
+  
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
