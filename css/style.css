@@ -7,15 +7,17 @@
 /* custom properties */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Handlee', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-titles: 'Playwrite AU SA', sans-serif;
 
     --fw-reg: 300; 
     --fw-bold: 900; 
 
-    --clr-light: #fff;
-    --clr-dark: #303030; 
-    --clr-accent: #DA504F; 
+    --clr-light: #e2cb9d;
+    --clr-dark: #53351f; 
+    --clr-accent: #a64237; 
+    --clr-white: #fff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -79,6 +81,7 @@ strong { font-weight: var(--fw-bold) }
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    color: var(--clr-light);
 }
 
 .btn:hover {
@@ -89,7 +92,7 @@ strong { font-weight: var(--fw-bold) }
 h1,
 h2,
 h3 {
-    line-height: 1; 
+    line-height: 1.2; 
     margin: 0; 
 }
 
@@ -99,13 +102,14 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: 0.25em; 
+    font-family: var(--ff-titles);
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
 }
 
-.section__title--intro strong { /* "Jane Smith" will appear on it's own line */ 
+.section__title--intro strong {
     display: block; 
 }
 
@@ -120,12 +124,14 @@ h3 { font-size: var(--fs-h3) }
     padding: 0.25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: var(--clr-white);
 }
 
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /* header */
@@ -137,7 +143,7 @@ header {
 }
 
 .logo {
-    max-width: 100px; 
+    max-width: 200px; 
 }
 
 .nav {
@@ -243,10 +249,20 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    border: 5px solid var(--clr-dark);
+    border-radius: 40%;
+    object-fit: cover;
 }
 
 .section__subtitle--intro {
     display: inline-block;
+}
+
+.intro__description {
+    grid-column: 1 / -1;
+    margin-top: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -285,7 +301,7 @@ header {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover; 
-    /* background-blend-mode: multiply; */
+    background-blend-mode: soft-light; 
     color: var(--clr-light);
     text-align: center; 
 }
@@ -335,6 +351,9 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs); 
+    border: 5px solid var(--clr-dark);
+    border-radius: 10%;
+    object-fit: cover;
 }
 
 @media (min-width: 600px) {
@@ -400,6 +419,9 @@ header {
     width: 100%;
     height: 300px;
     position: relative;
+    border: 5px solid var(--clr-light);
+    border-radius: 10%;
+    object-fit: cover;
 }
 
 .portfolio__img {
