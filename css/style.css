@@ -297,6 +297,11 @@ header {
         width: calc(100% + 10.5em); 
     }
 
+    .portfolio__subtitle {
+        left: -1.0em;
+        width: calc(100% + 3em);
+    }
+
 }
 
 /* My experiences section */
