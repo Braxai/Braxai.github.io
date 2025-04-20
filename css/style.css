@@ -116,6 +116,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle {
     margin: 0; 
     font-size: var(--fs-h3);
+    min-height: auto;
 }
 
 .section__subtitle--intro, 
@@ -125,7 +126,9 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     color: var(--clr-white);
+    display: inline-block;
 }
+
 
 .section__subtitle--work {
     color: var(--clr-accent);
@@ -290,9 +293,10 @@ header {
         grid-row: 2; 
         text-align: right; 
         position: relative; 
-        left: -1.5em;
-        width: calc(100% + 1.5em); 
+        left: -12em;
+        width: calc(100% + 10.5em); 
     }
+
 }
 
 /* My experiences section */
@@ -486,7 +490,7 @@ header {
     padding: .5em; 
 }
 
-/* League Management Page Styles  */ 
+/* League Management Page Styles */ 
 
 .portfolio-item-page {
     padding: 0 2em 2em; 
@@ -518,4 +522,39 @@ header {
     position: relative; 
     z-index: 2; 
     box-shadow: var(--bs);
+}
+
+/* Animations */
+.auto-type-container {
+    width: 100%;
+}
+
+#typing-name {
+    display: inline-block;
+    min-width: 7ch;
+}
+
+.animation-placeholder {
+    visibility: hidden;
+}
+
+#cursor {
+    display: inline-block;
+    color: var(--clr-dark);
+}
+
+.about-me__body:hover p:hover,
+.experience:hover h3,
+.experience:hover p {
+    transform: scale(1.05);
+}
+.about-me__body:hover p:hover,
+.experience:hover p {
+    font-weight: bold;
+}
+
+.about-me__body p,
+.experience h3,
+.experience p {
+    transition: transform 0.3s ease, font-weight 0.3s ease;
 }

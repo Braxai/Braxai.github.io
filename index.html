@@ -39,10 +39,20 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Ian O'Connell</strong>
+                Hi, I am <strong>Ian <span id="typing-name"><span id="cursor">|</span></span></strong>
             </h1> <!-- BEM system -- means modifier class -->
-            <p class="section__subtitle section__subtitle--intro">CSE Graduate Seeking Employment</p>
-            <p class="intro__description"><strong>Currently seeking full time employment.</strong></p>
+            <div class="auto-type-container">
+                <p class="section__subtitle section__subtitle--intro">
+                    <!-- Placeholder is so the div height is correct before animation starts -->
+                    <span class="animation-placeholder" aria-hidden="true">&</span>
+                    <span class="auto-type"></span> 
+                </p>
+            </div>
+            
+            <!-- Typed.js library -->
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+            <p class="intro__description"><strong>Currently seeking full time employment...</strong></p>
             <img src="img/ian-oconnell-01.jpg" alt="a picture of Ian O'Connell smiling" class="intro__img">
         </section>
 
