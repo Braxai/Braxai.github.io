@@ -52,6 +52,16 @@ body {
     margin-top: 80px;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin-top: 0;
+    }
+}
+
 section {
     padding: 5em 2em;
 }
@@ -194,6 +204,33 @@ header {
     color: var(--clr-dark);
 }
 
+@media (max-width: 750px) {
+    .nav {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+        width: max-content;
+        max-width: 90vw;
+        height: auto;
+        top: 3.35em; 
+        right: 0;
+        background: var(--clr-light);
+        border-left: 3px solid var(--clr-dark);
+        border-bottom: 3px solid var(--clr-dark);
+        z-index: 998;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 0.25em;
+    }
+
+}
+
 .nav-toggle {
     padding: .5em;
     background: transparent;
@@ -274,6 +311,14 @@ header {
     margin-top: 2em;
     font-size: 1.5em;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .section__subtitle--intro {
+        text-align: right; 
+        left: -0.5em;
+        width: calc(100% - 3rem); 
+    }
 }
 
 @media (min-width: 600px) {
