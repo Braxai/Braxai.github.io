@@ -48,17 +48,69 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      entry.target.classList.toggle('visible', entry.isIntersecting);
+        entry.target.classList.toggle('visible', entry.isIntersecting);
     });
-  }, { threshold: 0.1 });
-  
+}, { threshold: 0.1 });
+
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
-const tween = KUTE.fromTo(
+// Blob animations
+// blob1 → blob2
+const tween1 = KUTE.fromTo(
     '#blob1',
     { path: '#blob1' },
     { path: '#blob2' },
-    { repeat: 999, duration: 3000, yoyo: true }
-)
+    { duration: 3000 }
+);
 
-tween.start();
+// blob2 → blob3
+const tween2 = KUTE.fromTo(
+    '#blob1',
+    { path: '#blob2' },
+    { path: '#blob3' },
+    { duration: 3000 }
+);
+
+// blob3 → blob1
+const tween3 = KUTE.fromTo(
+    '#blob1',
+    { path: '#blob3' },
+    { path: '#blob1' },
+    { duration: 3000 }
+);
+
+// Chain into loop
+tween1.chain(tween2);
+tween2.chain(tween3);
+tween3.chain(tween1);
+
+const tween4 = KUTE.fromTo(
+    '#blob4',
+    { path: '#blob4' },
+    { path: '#blob5' },
+    { duration: 3000 }
+);
+
+// blob2 → blob3
+const tween5 = KUTE.fromTo(
+    '#blob4',
+    { path: '#blob5' },
+    { path: '#blob6' },
+    { duration: 3000 }
+);
+
+// blob3 → blob1
+const tween6 = KUTE.fromTo(
+    '#blob4',
+    { path: '#blob6' },
+    { path: '#blob4' },
+    { duration: 3000 }
+);
+
+// Chain into loop
+tween4.chain(tween5);
+tween5.chain(tween6);
+tween6.chain(tween4);
+
+tween1.start();
+tween4.start();
