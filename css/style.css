@@ -308,9 +308,9 @@ header {
 
 .intro__description {
     grid-column: 1 / -1;
-    margin-top: 2em;
     font-size: 1.5em;
     text-align: center;
+    margin-bottom: -4em;
 }
 
 @media (max-width: 500px) {
@@ -361,11 +361,11 @@ header {
 
 .my-experiences {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
-    background-size: cover; 
-    background-blend-mode: soft-light; 
     color: var(--clr-light);
     text-align: center; 
+    z-index: 1;
+    margin-bottom: -27%;
+    margin-top: -15%;
 }
 
 .section__title--experiences {
@@ -376,20 +376,22 @@ header {
 .section__title--experiences::after {
     content: '';
     display: block; 
-    width: 3em;
+    width: 6em;
     height: 1px; 
     margin: 0.5em auto 1em; 
     background: var(--clr-light);
     opacity: 0.5;
+    background-color: var(--clr-light);
 }
 
 .experiences {
-    margin-bottom: 4em; 
+    margin-bottom: 10em; 
 }
 
 .experience {
     max-width: 500px;
     margin: 0 auto; 
+    z-index: 2;
 }
 
 @media (min-width: 800px) {
@@ -638,4 +640,69 @@ header {
 .animate.zoom-in.visible {
     opacity: 1;
     transform: scale(1);
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 87px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: var(--clr-light);
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 75px;
+}
+
+.wave2 .shape-fill {
+    fill: #111;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    margin-bottom: -10em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('../resources/layer1.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+    backface-visibility: hidden;
+}
+
+.blob-motion {
+    position: aboslute; 
+    transform: translateY(-20%);
 }
