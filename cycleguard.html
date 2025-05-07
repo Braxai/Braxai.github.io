@@ -3,14 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>League of Legends Program Management</title>
+        <title>CycleGuard</title>
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- normalize for different browsers --> 
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  <!-- font awesome for brands -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Playwrite+AU+SA:wght@100..400&display=swap"
+            rel="stylesheet">
 
+        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -41,26 +47,164 @@
             <img src="img/cycleguard-logo.jpg" alt="CycleGuard Logo" class="portfolio-item-page__img">
         </section>
 
+        <section class="rotating-body">
+            <div class="rotating-image-container">
+                <span style="--i: 1">
+                    <img src="img/cg_home.jpg" alt="home page">
+                </span>
+                <span style="--i: 2">
+                    <img src="img/cg_profile.jpg" alt="profile">
+                </span>
+                <span style="--i: 3">
+                    <img src="img/cg_live_route.jpg" alt="live route">
+                </span>
+                <span style="--i: 4">
+                    <img src="img/cg_post_ride.jpg" alt="post ride">
+                </span>
+                <span style="--i: 5">
+                    <img src="img/cg_ride_history.jpg" alt="ride history">
+                </span>
+                <span style="--i: 6">
+                    <img src="img/cg_notification_manager.jpg" alt="notification manager">
+                </span>
+                <span style="--i: 7">
+                    <img src="img/cg_achievements.jpg" alt="achievements">
+                </span>
+                <span style="--i: 8">
+                    <img src="img/cg_onboard.jpg" alt="onboard">
+                </span>
+            </div>
+
+            <div class="rotating-btn-container">
+                <button class="rotating-btn" id="prev">Prev</button>
+                <button class="rotating-btn" id="next">Next</button>
+            </div>
+
+            <script src="js/rotating_image.js"></script>
+        </section>
+
         <div class="portfolio-item-page">
             <h3>CycleGuard</h3>
-            <p>CycleGuard is a mobile application and accompnaying helmet that aims to innovate the bike riding experience. The 
-            helmet offers various safety features including automatic headlights and brakelights as well as toggleable turn signals. CycleGuard 
-            connects to a mobile app to track the user’s history of bike rides, as a gamified fitness tracker system for encouraging users to 
-            exercise more. It saves history of bike rides and uses user-input metrics to determine an estimated calories burned over time, and 
-            displays this information as easy-to-understand visual graphs. Users are encouraged to bike more through earnable achievements and 
-            an in-game currency system, with currency earned based on distance traveled. Currency can then be spent on in-game cosmetics such 
-            as background colors. In addition to this the app includes social platforms for users to create accounts and interact with their friends. 
+                <p> CycleGuard is a mobile application and smart helmet that aims to innovate the fitness bike riding space. The helment 
+                offers various safety features including automatic headlights and brakelights, toggleable turn signals, gps, elevation, and 
+                speed tracking. The smart helmet connects to CycleGuard-a standalone mobile app that can be used with or without the helmet to
+                track biking fitness progress through a gramified approach. The app utilizes bluetooth and location services to track a ride in 
+                real time and offer various statistical metrics associated with individual rides and all time ride history. The app is designed 
+                to feel like making progress through a game with earnable achievements and an in-app currency that can be spent on cosmetics. The 
+                app includes social platforms that foster community components in basic friend functionality, leaderboards, and team challenges. 
+                Consistency is encouraged through streaks, daily challenges, and daily goals. 
+                </p>
+
+            <h3>Front End Engineer</h3>
+                <p>I worked on mobile development for the CycleGuard project with an emphasis on the front end. I was responsible for engineering several core app features
+                with the aim of making an appealing and intuitive UI/UX. Graphical and visual representations of statistics were utilized throughout the app to make it easier 
+                and faster to digest information. Animations, transitions, and interactable components were included on all pages I developed to improve the user experience. 
+                </p>
+                <p>Plugins and packages were a major component of this project. Flutter has extensive funcitonality with packages that enable rapid development and integrating 
+                known and proven problem solutions. The downside of this is that the app becomes dependent on lots of other people's code and can quickly become difficult to 
+                manage if these plugins and packages are continuously updated. Taking time to build certain features for ourselves such as the notification manager help customize 
+                the app and limit dependencies.
+                </p>
+            <h4>Primary Contributions</h4>
+            <ul>
+                <li><strong>Home page:</strong> visual representations of weekly statistics, achievement progress, daily goals and challenges with
+                various animations make the home page an interactive and intuitive default page for the app</li>
+                <li><strong>Store:</strong> in-app currency can be earned through biking and spent on cosmetic items including color themes, icons, and a rocket boost</li>
+                <li><strong>Achievements:</strong> completion of distance, time, consistency, pack, and unique milestones tracked. Achievement cards 
+                can be selected to increase the size for readability.</li>
+                <li><strong>Trip history:</strong> all-time user statistics and ride history that can be filtered by duration, distance, and calories burned, sorted
+                by date for easier navigation, and days can be expanded to see detailed information about each ride on that day. A miles biked calendar 
+                can be viewed to see how many miles were biked one very day in an engaging menu inspired by the github commit history.</li>
+                <li><strong>Social components:</strong> profile information, icons, and notification system using local permissions on Android/iOS</li>
+                <li><strong>Settings:</strong> set health information, change color themes, dark mode, privacy settings</li> 
+                <li><strong>Onboarding:</strong> welcome/start page and replayable new user tutorial create an easy introduction to the app</li>
+                <li><strong>Weekly team challenges (“Packs”):</strong> community interaction feature where friends can join a pack with a common goal of x miles biked in a 
+                week. The pack leader has management capabilities of inviting/kicking members, changing goals, and changing who is the leader. Pack progress is shown with 
+                contribution statistics</li>
+                <li><strong>App navigation, animations, and page transitions:</strong> bottom navigation bar, page tabs, and simple animations 
+                designed for intuitive and engaging experience</li>
+            </ul>
+
+            <div class="image-row">
+                <img src="img/flutter_icon.webp" alt="Flutter Icon">
+                <img src="img/spring_icon.png" alt="Spring Icon">
+                <img src="img/dynamodb_icon.png" alt="DynamoDB Icon">
+            </div>
+
+            <div class="two-columns">
+                <div class="column">
+                    <h4>Tech Stack</h4>
+                    <p>The front end is built with the Flutter framework, and the backend utilizes the Spring framework and DynamoDB database.</p>
+                    <p>This tech stack was chosen primarily due to certain members of the team having experience with these technologies as well as 
+                    the perception that this would be a beginner friendly stack given the team was far more comfortable with the embededd system smart 
+                    helmet side of the project than the mobile app requirements. 
+                    </p>
+                </div>
+                <div class="column">
+                    <h4>Tech Stack Cons</h4>
+                    <p>Ultimately these decisions proved to be correct given the context 
+                    of a school project but if this product were to be taken to market some complications arise by using this particular stack. These include 
+                    but are not limited to large app size, limited funcitonality with APIs, package and plugin dependencies, heavyweight runtime, inconsistencies
+                    in cost of the database, and as this is an uncommon tech stack finding developers comfortable in it already could prove challenging. 
+                    </p>
+                </div>
+            </div>
+
+            <h4>Collaboration</h4>
+            <p>I collaborated closely with our backend developer, working extensively with accessor functions/APIs for the backend, integrating various dependencies,
+            handling Android/iOS settings and permissions. The general workflow was as a team deciding we want tobuild a particular feature, consulting our client on it, 
+            building the backend to store any data necessasry for the feature, and finishing with the front end logic.
             </p>
-            
-            <h3>My Experience as a Front End Developer</h3>
-            <p>My primary responsibilities on this project took place on the front end. I was responsible for many aesthetic design decisions that 
-            aimed to make the app an appealing and intuitive experience for users. This included working directly on the home page where weekly statistics, 
-            welcome messages, and achievment progress can be viewed in an engaging and visual manner. I developed the trip history page where users 
-            can see their all time statistics and view their entire ride history with a number of filters such as distance rode and the dates rides were completed.
-            Again this aimed to have a visually appealing layout that makes users excited to look at their progress. The achievements page where various badges
-            and the current progress can be seen, the store where items can be purchased and interacted with in other parts of the app, and the settings where users
-            can select themes, darkmode, privacy settings, and icons were all designed by me with the same goals as the major app features. 
+
+            <h3>Team Environment</h3>
+            <p>CycleGuard was a large team by university project standards. Including myself there was a team of four working on the mobile app, 
+            our client was a four person team building the smart helmet which our team ultimately saw through to completion, a designer, and 
+            oversight from our professor and TA. 
             </p>
+            <p>Version control and communication were far more signfiicant components of this process compared 
+            to other projects I worked on during my degree. The team adopted agile practices in two week sprints and regular team meetings 
+            that contributed towards a professional standard and consistent development progress
+            </p>
+
+            <h4>Conflict Resolution</h4>
+            <p>The atmosphere was great with several of my teammates being motivated to put in the hours required to meet some ambitious 
+            project goals. There were conflicts with certain members of the team not meeting the contribution standards that had been set. By putting 
+            into practice some of the management skills I developed with the League of Legends program we were able to resolve these through 
+            open communication and keep everyone working together towards the end goal we had established early on in the development cycle.
+            </p>
+
+            <h3>Lessons</h3>
+            <p>There are several significant lessons learnt from working on this project. Of course technical skills were developed and are discussed extensively
+            on this page but there are two primary lessons beyond this which are ideas around marketability and collaboraiton.
+            </p>
+
+            <div class="two-columns">
+                <div class="column">
+                    <h4>Unnecessary Features Inhibiting Marketability/Brand</h4>
+                    <p>The priamry culprit of this is changeable color themes. While this is a neat feature to have it means that different users 
+                    experience significantly different apps. If we were to pursue advertising the app would 
+                    look different from one advertisement to the next making it more challenging for a recognizeable brand to be built. 
+                    Given this experience I would argue an app should put extensive effort into one themeatic design that makes sense given the product and is 
+                    recognizeable from one user to the next. 
+                    </p>
+                </div>
+                <div class="column">
+                    <h4>Importance of the Middle Man</h4>
+                    <p>The idea here is that when any two entities with separate disciplines, skill sets, and perspectives are interacting it is crucial that there 
+                    is someone who can bridge the gap between them. For example a person who can mediate the conversation between engineers and management, or management and 
+                    designers, any two different entities is imperative to efficient functioning of the team. In addition to this a person who can help resolve the conflicts 
+                    arising between individuals or groups of people saves tremendous amounts of time.
+                    </p>
+                </div>
+                <div class="column">
+                    <h4>Develop the Core Feature</h4>
+                    <p>Perhaps the biggest mistake we made was going wide to early into development. As a result some of the core features including the routes tracking capabilities 
+                    and social community components feel underdeveloped. Likely more time should have been dedicated to perfecting the routes features as that is the core selling point 
+                    of the app. The most important two or three features should be identified and thoroughly developed so they stand out as exciting features of the product.
+                    </p>
+                </div>
+            </div>
+
         </div>
         
         <!-- Footer -->
@@ -81,6 +225,5 @@
         </footer>
 
         <script src="js/index.js"></script>
-
     </body>
 </html>
