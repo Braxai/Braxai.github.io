@@ -753,6 +753,17 @@ header {
     gap: 20px;
 }
 
+.three-columns {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .three-columns {
+      flex-direction: column;
+    }
+  }
+
 .column {
     flex: 1;
 }
